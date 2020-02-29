@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body{
+    overflow: hidden;
+    height: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.cover{
+    height: 100%;
+    background-image: url("../img/event-section-cover.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+#filter-login{
+    width: 40%;
+    height: 100%;
+    background-color: #fff;
+    padding: 50px;
+    padding-top: 300px;
+}
+
+#filter-login input{
+    width: 100%;
+    text-align: center;
+}
+
+#logo{
+    width: 40%;
+    height: auto;
+    margin: 0 30%;
+}
+
+#logo-position{
+    position: absolute;
+    margin-top: 50px;
+}
+
+#logo-position h1{
+    font-family: Nunito, sans-serif;
+    font-weight: bolder;
+    margin-left: 60px;
+    color: rgb(10, 193, 248);
+    cursor: default;
+}
+
+#logo-position p{
+    font-family: Nunito, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-left: 60px;
+    cursor: default;
+}
+
+#btn-login{
+    width: 100%;
+    font-family: Nunito, sans-serif;
+    font-weight: bold;
+    background-color: rgb(10, 193, 248);
+    border: none;
+    color: #fff;
+}
+
+#btn-login:hover{
+    background-color: rgb(5, 154, 199);
+}
+
+#btn-forgot-password{
+    font-family: Nunito, sans-serif;
+    font-weight: bold;
+    background: rgb(187, 187, 187);
+    color: #fff;
+}
+
+#dog-login{
+    width: 40%;
+    position: absolute;
+    margin-top: -500px;
+    margin-left: 400px;
+}

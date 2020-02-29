@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Puppy Hour - Dashboard</title>
+
+        <!--Favicon-->
+        <link rel="icon" href="img/logo.png" sizes="16x16">
+
+        <!--CSS-->
+        <link rel="stylesheet" href="css/dashboard.css">
+
+        <!--JQuery-->
+        <script src="jquery/jquery-3.4.1.js"></script>
+        <script src="jquery/functions-dashboard.js"></script>
+
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="bootstrap/bootstrap-4.4.1/css/bootstrap.min.css">
+        <script href="bootstrap/bootstrap-4.4.1/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+        
+        <div id="menu-lateral">
+            <div class="menu-filter">
+                <h1>Puppy Hour</h1>
+                <p>Passeios</p>
+                <ul id="menu">
+                    <li id="btn-menu-inicio"><a id="btn-menu" class="btn btn-outline-warning" href="#">Início</a></li>
+                    <li id="btn-menu-perfil"><a id="btn-menu" class="btn btn-outline-warning" href="#">Perfil</a></li>
+                    <li id="btn-menu-editar"><a id="btn-menu" class="btn btn-outline-warning" href="#">Editar site</a></li>
+                    <li id="btn-menu-sair"><a id="btn-menu" class="btn btn-outline-warning" href="dashboard_login.html">Encerrar sessão</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--HOME SECTION-->
+        <div id="conteudo-dashboard">
+            <h1 id="page-title">Início</h1>
+            <hr id="divider">
+
+            <div id="home-section">
+                <h3 id="section-update-title">Últimas alterações</h3>
+                
+                <div id="card">
+                    <div id="card-text">
+                        <h3>Update Title</h3>
+                        <p>Update description</p>
+
+                        <h6>Data:<span id="update-change"> 25/02/2020</span></h6>
+
+                        <button id="btn-arquivar" class="btn btn-warning">Arquivar</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!--PROFILE SECTION-->
+            <div id="profile-section">
+               <div class="card-profile">
+                    <div id="profile-pic"></div>
+                    <div id="profile-info">
+                        <h3>Jane Doe</h3>
+                        <p>janedoe@email.com</p>
+                    </div>
+               </div>
+
+                <form id="form-perfil" method="POST">
+
+                    <input class="form-control" placeholder="Editar nome">
+                    <br>
+                    <input id="btn-salvar" type="button" class="btn btn-outline-warning" value="Salvar alterações">
+                    <br><br><br>
+                    <input class="form-control" type="email" placeholder="Novo e-mail">
+                    <br>
+                    <input id="btn-salvar" type="button" class="btn btn-outline-warning" value="Salvar alterações">
+                    <br><br><br>
+                    <input class="form-control" type="password" placeholder="Senha antiga">
+                    <br>
+                    <input class="form-control" type="password" placeholder="Nova senha">
+                    <br>
+                    <input class="form-control" type="password" placeholder="Confirmar nova senha">
+                    <br>
+                    <input id="btn-salvar" type="button" class="btn btn-outline-warning" value="Salvar alterações">
+                </form>
+                <br><br>
+            </div>
+
+
+
+
+            <!--EDIT SECTION-->
+            <div id="edit-section">
+                <img src="">
+                <form id="form-edit" method="POST">
+                    <h3>Capa</h3>
+                    <br>
+                    <label>Título principal:</label>
+                    <input type="text" placeholder="Digite o novo título da tela de boas-vindas!" class="form-control">
+                    <br>
+                    <input id="btn-salvar" type="button" class="btn btn-outline-success" value="Salvar alterações">
+                    <br><br>
+
+                    <label>Tela Principal - Descrição:</label>
+                    <textarea class="form-control" rows="4" cols="50" placeholder="Digite a nova descrição, aquela que vem logo abaixo do texto de boas-vindas!"></textarea>
+                    <br>
+                    <input id="btn-salvar" type="button" class="btn btn-outline-success" value="Salvar alterações">
+                    <br><br>
+                    <hr>
+
+
+                    <h3>Sobre</h3>
+                    <br>
+                    <label>Sobre - Título: </label>
+                    <input class="form-control" type="text" placeholder="Digite o novo título da seção 'Sobre'">
+                    <br>
+                    <input id="btn-salvar" type="button" class="btn btn-outline-success" value="Salvar alterações">
+                    <br><br>
+
+                    <label>Sobre - Descrição: </label>
+                    <textarea class="form-control" rows="4" cols="50" placeholder="Adicione aqui a nova descrição da seção 'Sobre'"></textarea>
+                    <br>
+                    <input id="btn-salvar" type="button" class="btn btn-outline-success" value="Salvar alterações">
+                    <br><br>
+                    <hr>
+
+                    <h3>Eventos</h3>
+                    <br>
+                    <label>Eventos - Nome do Evento:</label>
+                    <input class="form-control" type="text" placeholder="Digite o nome do novo evento aqui">
+                    <br>
+                    <input id="btn-salvar" type="button" class="btn btn-outline-success" value="Salvar alterações">
+                    <br><br>
+
+                    <label>Eventos - Local do Evento: </label>
+                    <input class="form-control" type="text" placeholder="Digite o local do evento">
+                    <br>
+                    <input id="btn-salvar" class="btn btn-outline-success" type="button" value="Salvar alterações">
+                    <br><br>
+                    <label>Eventos - Contato: </label>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <input type="tel" class="form-control" placeholder="DDD">
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="tel" class="form-control" placeholder="Número de telefone/celular">
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" placeholder="Tratar com">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <input type="tel" class="form-control" placeholder="DDD">
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="tel" class="form-control" placeholder="Número de telefone/celular">
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" placeholder="Tratar com">
+                        </div>
+                    </div>
+                    <br>
+                    <input id="btn-salvar" type="button" class="btn btn-outline-success" value="Salvar alterações">
+                    <br><br>
+                    <hr>
+
+
+                    <h3>Serviços</h3>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label>Passeio Semanal: </label>
+                            <input class="form-control" type="text" placeholder="Passeio Semanal - Título"><br>
+                            <textarea class="form-control" rows="4" cols="50" placeholder="Passeio Semanal - Descrição"></textarea>
+                        </div>
+                        <div class="col-sm-6">
+                            <label>Treino de Passeio: </label>
+                            <input class="form-control" type="text" placeholder="Treino de Passeio - Título"><br>
+                            <textarea class="form-control" rows="4" cols="50" placeholder="Treino de Passeio - Descrição"></textarea>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label>Passeio Livre: </label>
+                            <input class="form-control" type="text" placeholder="Passeio Livre - Título"><br>
+                            <textarea class="form-control" rows="4" cols="50" placeholder="Passeio Livre - Descrição"></textarea>
+                        </div>
+                        <div class="col-sm-6">
+                            <label>Pacotes de Passeio: </label>
+                            <input class="form-control" type="text" placeholder="Pacotes de Passeio - Título"><br>
+                            <textarea class="form-control" rows="4" cols="50" placeholder="Pacotes de Passeio - Descrição"></textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <input id="btn-salvar" class="btn btn-outline-success" type="button" value="Salvar alterações">
+                    <br><br><br><br>
+
+                </form>
+            </div>
+
+
+
+
+        </div>
+
+
+    </body>
+</html>

@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+.signup-form-container{
+    width: 100%;
+    height: 100%;
+}
+
+.signup-form{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 99;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    padding-top: 50px;
+}
+
+.signup-form h1{
+    font-family: Nunito, sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+
+.signup-form hr{
+    background-color: #fff;
+}
+
+.signup-form h4{
+    font-family: Nunito, sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+
+.signup-form h5{
+    font-family: Nunito, sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+
+.close-button-image{
+    width: 5%;
+    margin: 0 47.5%;
+    cursor: pointer;
+}
+
+.signup-form-options{
+    list-style: none;
+    color: #fff;
+}
+
+.signup-form-options input{
+    margin-right: 10px;
+}
+
+#restrition-description{
+    margin-bottom: 10px;
+}
+
+.signup-form p{
+    font-family: Nunito, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+#btn-enviar-informações{
+    width: 50%;
+    margin: 0 25%;
+    font-family: nunito, sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+
+    background: #fff;
+    color:#0AD2F1;
+    transition: 0.2 ease-out;
+}
+
+#btn-enviar-informações:hover{
+    transition-timing-function: ease-out;
+    background-color: #0AD2F1;
+    color: #fff;
+}
+
+
+/*RANGE SLIDER*/
+.slide-container{
+    width: 100%;
+}
+
+#my-range{
+    width: 100%;
+}

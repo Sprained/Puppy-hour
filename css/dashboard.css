@@ -1,0 +1,280 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body{
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+#menu-lateral{
+    width: 12%;
+    height: 100%;
+    background: url('../img/event-section-cover.jpg');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    z-index: 99;
+    float: left;
+}
+
+
+.menu-filter{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 109, 197, 0.5);
+    position: absolute;
+    z-index: 99;
+}
+
+
+
+#menu{
+    width: 100%;
+    height: 100%;
+}
+
+#menu li{
+    width: 100%;
+}
+
+#btn-menu{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    background-color: rgba(15, 109, 197, 0.0);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 0px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    padding: 10px;
+
+    font-family: Nunito, sans-serif;
+    font-weight: bold;
+    transition: ease-out 0.2s;
+}
+
+#btn-menu:hover{
+    transition-timing-function: ease-out;
+    width: 110%;
+    background: linear-gradient(to right, rgb(223, 134, 19), rgb(238, 234, 14));
+}
+
+
+#btn-sair-sessao{
+    margin-top: 100px;
+}
+
+#menu-lateral h1{
+    font-family: Nunito, sans-serif;
+    font-weight: bolder;
+    font-size: 20pt;
+    color: rgb(255, 255, 255);
+
+    margin-top: 30px;
+    margin-left: 10px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+#menu-lateral p{
+    font-family: Nunito, sans-serif;
+    text-transform: uppercase;
+    font-size: 10pt;
+    letter-spacing: 5px;
+    color: #fff;
+
+    margin-left: 10px;
+    margin-bottom: 50px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+
+/*CONTEUDO DO DASHBOARD*/
+
+#conteudo-dashboard{
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-left: 200px;
+    background: #ffffff;
+    padding: 50px;
+}
+
+#conteudo-dashboard h1{
+    font-family: Nunito, sans-serif;
+    font-weight: bold;
+    color: rgb(136, 136, 136);
+}
+
+
+
+
+
+
+/*HOME SECTION */
+
+
+#home-section{
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+
+
+#section-update-title{
+    font-family: Nunito, sans-serif;
+    font-weight: bold;
+    font-size: 15pt;
+    margin-top: 30px;
+    color: rgb(136, 136, 136);
+}
+
+
+#card{
+    width: 260px;
+    height: 300px;
+    background: linear-gradient(to right, rgb(23, 95, 189), rgb(5, 113, 255));
+    padding: 10px;
+    margin-top: 50px;
+
+    border-radius: 5px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+#card-text{
+    width: 100%;
+}
+
+#card-text h3{
+    font-family: Nunito, sans-serif;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 10px;
+    color: #fff;
+}
+
+#card-text p{
+    font-family: Nunito, sans-serif;
+    margin-left: 10px;
+    color: #fff;
+}
+
+#card-text h6{
+    font-family: Nunito, sans-serif;
+    font-weight: lighter;
+    font-size: 10pt;
+    color: #fff;
+
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+
+#btn-arquivar{
+    width: 40%;
+    background: linear-gradient(to right, rgb(223, 134, 19), rgb(238, 234, 14));
+    font-family: Nunito, sans-serif;
+    font-weight: bold;
+    color: #222;
+
+    border: none;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.4);
+
+    margin-top: 50px;
+    margin-left: 10px;
+    transition: ease-out 0.2s;
+}
+
+#btn-arquivar:hover{
+    transition-timing-function: ease-out;
+    width: 60%;
+}
+
+/* PROFILE SECTION */
+
+.card-profile{
+    width: 30%;
+    height: 15vh;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgb(23, 93, 185), rgb(5, 176, 255));
+}
+
+#profile-pic{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background-image: url("../img/profile.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 30px;
+    margin-top: 5px;
+    margin-left: 0px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    float: left;
+}
+
+#profile-info{
+    margin-top: 30px;
+    float: left;
+    color: #fff;
+}
+
+#profile-info h3{
+    font-family: Nunito, sans-serif;
+    font-weight: bolder;
+}
+
+#profile-info p{
+    font-family: Nunito, sans-serif;
+    font-weight: lighter;
+}
+
+#form-perfil{
+    width: 30%;
+}
+
+
+#btn-salvar{
+    width: 40%;
+    font-family: Nunito, sans-serif;
+    font-weight: bold;
+    color: rgb(40, 50, 71);
+
+    background: linear-gradient(to right, rgb(223, 134, 19), rgb(238, 234, 14));
+    border: none;
+
+    transition: ease-out 0.2s;
+}
+
+#btn-salvar:hover{
+    transition-timing-function: ease-out;
+    width: 50%;
+}
+
+
+
+/*EDIT SECTION*/
+
+#form-edit{
+    width: 30%;
+}
+
+label{
+    font-family: Nunito, sans-serif;
+    font-weight: bold;
+    color: #979797;
+}
+
+
+
+
