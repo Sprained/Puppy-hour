@@ -67,7 +67,7 @@ section{
 }
 
 
-#menu-contato{
+#menu-button{
     background-color: #0AD2F1;
     padding: 10px;
     border: none;
@@ -75,7 +75,7 @@ section{
     transition: 0.2s ease-out;
 }
 
-#menu-contato:hover{
+#menu-button:hover{
     transition-timing-function: ease-out;
     background-color: rgb(12, 172, 197);
 }
@@ -146,7 +146,7 @@ section{
 #dog-img-cover{
     width: 30%;
     margin: 0 35%;
-    position: absolute;
+
     margin-top: -372px;
 }
 

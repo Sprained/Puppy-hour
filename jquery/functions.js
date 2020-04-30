@@ -7,7 +7,7 @@ $(function(){
     var alergicDescription = $("#alergic-description");
     var alergicYesCheckbox = $(".alergic-yes-checkbox");
     var btnCadastramento = $("#btn-cadastramento");
-    
+
     signupFormBackground.hide();
     restitionDescription.hide();
     alergicDescription.hide();

@@ -36,9 +36,8 @@
                 <li class="nav-item"><a href="#services">serviços</a></li>
                 <li class="nav-item"><a id="signup-open" href="#">cadastramento</a></li>
                 <li class="nav-item"><a id="menu-contato" href="#contato">contato</a></li>
+                <li class="nav-item"><a id="menu-contato" href="dashboard_login.html">Entrar</a></li>
             </ul>
-
-            <button id="btn-sair-sessao"><a href="dashboard_login.html">Entrar</a></button>
         </nav>
         
 
@@ -60,29 +59,33 @@
                         <h1>Cadastramento</h1>
                         <hr>
                         <br>
-    
-                        <h4>Informações do animal</h4>
+                        
+                        <!--CONTACT FORM-->
+                    <form action="processa_cadastro.php" method="POST" class="contact-form">
+                        <!--NAME INPUT-->
+                        <h4>Informações do pet</h4>
                         <br>
-                        <form method="POST" class="form-signup">
-                            <input type="text" class="form-control" placeholder="Nome do animal"><br>
-                            <div class="row">
-                                <div class="col-sm-8">
-                                    <input type="text" class="form-control" placeholder="Raça">
-                                </div>
-                                <div class="col-sm-4">
-                                    <input type="number" class="form-control" placeholder="Peso (kg)">
-                                </div>
+                        <input type="text" name="nomepet" placeholder="Nome do pet" class="form-control"><br>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <!--BREED INPUT-->
+                                <input type="text" name="raca" placeholder="Raça" class="form-control">
                             </div>
+                            <div class="col-sm-6">
+                                <!--WEIGHT INPUT-->
+                                <input type="number" name="peso" placeholder="Peso (kg)" class="form-control">
+                            </div>
+                        </div>
                             <br>
                             <div class="row">
-                                <div class="col-sm-4">
+                                <div class="col-sm-5">
                                     <h5>Vacinas em dia?</h5>
                                     <ul class="signup-form-options">
                                         <li><input checked="false" type="checkbox">Sim</li>
                                         <li><input checked="false" type="checkbox">Não</li>
                                     </ul>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-sm-5">
                                     <h5>Restrição/Doença?</h5>
                                     <ul class="signup-form-options">
                                         <li><input checked="false" type="checkbox" class="restrition-yes-checkbox">Sim</li>
@@ -90,7 +93,7 @@
                                         <li><input checked="false" type="checkbox">Não</li>
                                     </ul>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-sm-5">
                                     <h5>Alergia(s)</h5>
                                     <ul class="signup-form-options">
                                         <li><input checked="false" type="checkbox" class="alergic-yes-checkbox">Sim</li>
@@ -109,34 +112,27 @@
                                 </div>
                                 <div class="col-sm-8">
                                     <div class="slide-container">
-                                        <input type="range" min="0" max="100" class="form-control" id="my-range">
+                                        <input type="range" min="0" max="100"  id="my-range">
                                     </div>
                                 </div>
                                 <div class="col-sm-2">
                                     <p>Agressivo</p>
                                 </div>
                             </div>
-                        </form>
-    
-                        <br><br><br>
-    
-                        <h4>Informações do Dono</h4>
                         <br>
-                        <form method="POST" class="owner-info-form">
-                            <input type="text" placeholder="Nome completo" class="form-control"><br>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <input type="text" placeholder="Endereço" class="form-control">
-                                </div>
-                                <div class="col-sm-6">
-                                    <input type="tel" placeholder="Telefone" class="form-control">
-                                </div>
-                            </div>
-                            <br>
-                            <input type="email" placeholder="E-mail" class="form-control">
-                        </form>
-                        <br><br>
-    
+                        <h4>Informações do dono</h4>
+                        <br>
+                        <!--NAME INPUT-->
+                        <input type="text" name="nomedono" placeholder="nome do dono" class="form-control">
+                        <br>
+                        <!--ADDRESS INPUT-->
+                        <input type="text" name="endereco" placeholder="Endereço" class="form-control"><br>
+                        <!--TEL INPUT-->
+                        <input type="tel" name="tell" placeholder="Telefone" class="form-control"></textarea>
+                        <br>
+                        <input type="email" name="email" placeholder="E-mail" class="form-control"></textarea>
+                        <br>
+
                         <h5>Formas de pagamento</h5>
                         <ul class="signup-form-options">
                             <li>Dinheiro</li>
@@ -145,20 +141,18 @@
                             <li>Boleto</li>
                         </ul>
 
-                        <br>
-                        <input type="submit" value="Enviar informações" id="btn-enviar-informações" class="btn btn-primary btn-lg">
-                        <br><br><br>
+                        <input id="btn-enviar-form" type="submit" class="btn btn-primary btn-lg" value="Enviar">
+                    </form>
+
+                        
+
                     </div>
-
-
                 </div>
                 <div class="col-sm-4">
                     <img class="close-button-image" src="img/close.png">
                 </div>
             </div>
         </div>
-
-
 
 
 
@@ -179,10 +173,6 @@
             </div>
         </div>
 
-        <!--DOG-->
-        <div id="dog-img">
-            <img id="dog-img-cover" src="img/dog-cover.png">
-        </div>
 
         <section id="sobre" class="about-us">
             <div class="row">
@@ -298,24 +288,24 @@
                     <br>
 
                     <!--CONTACT FORM-->
-                    <form method="POST" class="contact-form">
+                    <form action="processa.php" method="POST" class="contact-form">
                         <!--NAME INPUT-->
-                        <input type="text" placeholder="Nome" class="form-control"><br>
+                        <input type="text" name="nome" placeholder="nome" class="form-control" id="nome"><br>
                         <div class="row">
                             <div class="col-sm-6">
                                 <!--E-MAIL INPUT-->
-                                <input type="email" placeholder="E-mail" class="form-control">
+                                <input type="email" name="email" placeholder="E-mail" class="form-control" id="email">
                             </div>
                             <div class="col-sm-6">
                                 <!--PHONE INPUT-->
-                                <input type="tel" placeholder="Telefone" class="form-control">
+                                <input type="tel" name="tel" placeholder="Telefone" class="form-control" id="tel">
                             </div>
                         </div>
                         <br>
                         <!--SUBJECT INPUT-->
-                        <input type="text" placeholder="Assunto" class="form-control"><br>
+                        <input type="text" name="assunto" placeholder="Assunto" class="form-control" id="assunto"><br>
                         <!--MESSAGE INPUT-->
-                        <textarea cols="50" rows="10" placeholder="Digite sua mensagem aqui..." class="form-control"></textarea>
+                        <textarea name="mensagem" cols="50" rows="10" placeholder="Digite sua mensagem aqui..." class="form-control" id="mensagem"></textarea>
                         <br>
                         <input id="btn-enviar-form" type="submit" class="btn btn-primary btn-lg" value="Enviar">
                     </form>
