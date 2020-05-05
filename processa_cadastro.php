@@ -20,6 +20,10 @@
 			private $endereco = null;
 			private $tell = null;
 			private $email = null;
+			private $vacinado = null;
+			private $restricao = null;
+			private $alergias = null;
+			private $comportamento = null;
 			public $status = array('codigo_status' => null, 'descicao_status' => null);
 
 			public function __get($atributo) {
@@ -31,7 +35,7 @@
 			}
 
 			public function mensagemValida() {
-				if(empty($this->nomepet) || empty($this->raca) || empty($this->peso) || empty($this->nomedono) || empty($this->endereco) || empty($this->tell) || empty($this->email) ) {
+				if(empty($this->nomepet) || empty($this->raca) || empty($this->peso) || empty($this->nomedono) || empty($this->endereco) || empty($this->tell) || empty($this->email) || empty($this->vacinado) || empty($this->restricao) || empty($this->alergias) || empty($this->comportamento) ) {
 					return false;
 				}
 
@@ -44,6 +48,38 @@
 		$mensagem->__set('nomepet', $_POST['nomepet']);
 		$mensagem->__set('raca', $_POST['raca']);
 		$mensagem->__set('peso', $_POST['peso']);
+		
+		if($_POST['vacinas']){
+			$mensagem->__set('vacinado', 'Sim');
+		}
+		else{
+			$mensagem->__set('vacinado', 'Não');
+		}
+
+		if($_POST['restricao']){
+			$mensagem->__set('restricao', $_POST['restricao']);
+		}
+		else{
+			$mensagem->__set('restricao', 'Não');
+		}
+		
+		if($_POST['alergias']){
+			$mensagem->__set('alergias', $_POST['alergias']);
+		}
+		else{
+			$mensagem->__set('alergias', 'Não');
+		}
+
+		if($_POST['comportamento'] == 1 || $_POST['comportamento'] == 2 || $_POST['comportamento'] == 3){
+			$mensagem->__set('comportamento', 'Calmo');
+		}
+		else if($_POST['comportamento'] == 4 || $_POST['comportamento'] == 5 || $_POST['comportamento'] == 6){
+			$mensagem->__set('comportamento', 'Um pouco agressivo');
+		}
+		else{
+			$mensagem->__set('comportamento', 'Agressivo');
+		}
+		
 		$mensagem->__set('nomedono', $_POST['nomedono']);
 		$mensagem->__set('endereco', $_POST['endereco']);
 		$mensagem->__set('tell', $_POST['tell']);

@@ -81,24 +81,24 @@
                                 <div class="col-sm-5">
                                     <h5>Vacinas em dia?</h5>
                                     <ul class="signup-form-options">
-                                        <li><input checked="false" type="checkbox">Sim</li>
-                                        <li><input checked="false" type="checkbox">Não</li>
+                                        <li><input name="vacinas" type="checkbox">Sim</li>
+                                        <li><input type="checkbox">Não</li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-5">
                                     <h5>Restrição/Doença?</h5>
                                     <ul class="signup-form-options">
-                                        <li><input checked="false" type="checkbox" class="restrition-yes-checkbox">Sim</li>
-                                        <input id="restrition-description" type="text" class="form-control" placeholder="Qual?">
-                                        <li><input checked="false" type="checkbox">Não</li>
+                                        <li><input type="checkbox" class="restrition-yes-checkbox">Sim</li>
+                                        <input name="restricao" id="restrition-description" type="text" class="form-control" placeholder="Qual?">
+                                        <li><input type="checkbox">Não</li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-5">
                                     <h5>Alergia(s)</h5>
                                     <ul class="signup-form-options">
-                                        <li><input checked="false" type="checkbox" class="alergic-yes-checkbox">Sim</li>
-                                        <input id="alergic-description" type="text" class="form-control" placeholder="Qual? ( ou quais?)">
-                                        <li><input checked="false" type="checkbox">Não</li>
+                                        <li><input type="checkbox" class="alergic-yes-checkbox">Sim</li>
+                                        <input name="alergias" id="alergic-description" type="text" class="form-control" placeholder="Qual? ( ou quais?)">
+                                        <li><input type="checkbox">Não</li>
                                     </ul>
                                 </div>
                             </div>
@@ -112,7 +112,7 @@
                                 </div>
                                 <div class="col-sm-8">
                                     <div class="slide-container">
-                                        <input type="range" min="0" max="100"  id="my-range">
+                                        <input name="comportamento" type="range" min="0" max="100"  id="my-range">
                                     </div>
                                 </div>
                                 <div class="col-sm-2">
